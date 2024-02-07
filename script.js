@@ -61,3 +61,10 @@ function changeImage(image) {
 function updateNoButtonText() {
   noButton.innerHTML = generateMessage(noCount);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(function() {
+    const audio = document.getElementById('background-music');
+    audio.play(); // Start audio playback after 5 seconds
+  }, 5000); // 5000 milliseconds = 5 seconds
+});
